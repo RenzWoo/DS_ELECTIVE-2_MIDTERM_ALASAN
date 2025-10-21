@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrainRotBGone - Profile</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <nav class="navbar">
+            <div class="navbar-brand">
+                <span style="font-size: 32px;">🗑️</span>
+                <h2>BrainRotBGone</h2>
+            </div>
+            <div class="navbar-icons">
+                <button class="icon-btn" onclick="window.location.href='feed.html'" title="Home">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </button>
+                <button class="icon-btn" onclick="window.location.href='profile.html'" title="Profile">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </button>
+                <button class="icon-btn logout" onclick="handleLogout()" title="Logout">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                        <polyline points="16 17 21 12 16 7"></polyline>
+                        <line x1="21" y1="12" x2="9" y2="12"></line>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+
+        <div class="feed-container">
+            <div class="profile-header">
+                <div class="profile-cover"></div>
+                <div class="profile-info">
+                    <div class="profile-avatar" id="profileAvatar">U</div>
+                    <div class="profile-details">
+                        <h2 id="profileUsername">Username</h2>
+                        <p class="email" id="profileEmail">email@example.com</p>
+                        <p class="profile-bio" id="profileBio">User bio</p>
+                        <div class="profile-stats">
+                            <div class="stat-item">
+                                <span id="profileFollowers">0</span>
+                                <small>Followers</small>
+                            </div>
+                            <div class="stat-item">
+                                <span id="profileFollowing">0</span>
+                                <small>Following</small>
+                            </div>
+                            <div class="stat-item">
+                                <span id="profilePostCount">0</span>
+                                <small>Posts</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="profile-posts-title">Your Posts</h3>
+            
+            <!-- Comment Atomized Warning -->
+            <div id="commentAtomizedWarning" class="atomized-warning">
+                <h3>⚠️ BRAINROT DETECTED IN COMMENT ⚠️</h3>
+                <p>Your comment has been atomized for containing brainrot content!</p>
+                <p style="font-size: 14px; margin-top: 8px; opacity: 0.9;">Banned words: skibidi, rizz, gyat, sigma, ohio, fanum tax, griddy</p>
+            </div>
+            
+            <div id="profilePosts"></div>
+        </div>
+    </div>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
