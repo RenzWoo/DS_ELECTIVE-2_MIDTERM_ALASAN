@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrainRotBGone - Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="auth-card">
+            <div class="logo">
+                <div class="logo-icon">🗑️</div>
+                <h1>BrainRotBGone</h1>
+                <p>Where quality content survives</p>
+            </div>
+            
+            <div id="loginError" class="error-message"></div>
+            
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" id="loginEmail" placeholder="Enter your email">
+            </div>
+            
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" id="loginPassword" placeholder="Enter your password">
+            </div>
+            
+            <button class="btn btn-primary" onclick="handleLogin()">Login</button>
+            
+            <div class="link-text">
+                Don't have an account? <a href="pages/signup.html">Sign up</a>
+            </div>
+            
+            <div class="demo-info">
+                Demo: john@example.com / password123
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
